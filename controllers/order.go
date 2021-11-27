@@ -43,13 +43,7 @@ func (conn *DBConn) CreateOrder(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, result)
 }
-// @Summary Get all orders summery
-// @Description Get all orders description
-// @Accept json
-// @Produce json
-// @Param orderId body Order true "Create Order"
-// @Success 200 {object} Order
-// @Router /orders [post]
+
 func (conn *DBConn) GetOrder(c *gin.Context) {
 	var (
 		order models.Order
